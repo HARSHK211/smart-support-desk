@@ -3,14 +3,17 @@ env/
 venv/
 .venv/
 
+
 # Python cache
 __pycache__/
+*.pyc
 *.py[cod]
 
 # Environment variables
 .env
 .env.*
 !.env.example
+ca.pem
 
 # Streamlit
 .streamlit/secrets.toml
