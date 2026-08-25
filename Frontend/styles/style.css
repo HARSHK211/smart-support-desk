@@ -1,0 +1,166 @@
+/* ===========================
+   APP BACKGROUND
+=========================== */
+
+.stApp{
+    background: #02021c;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+section[data-testid="stSidebar"]{
+    background:#0f172a;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1{
+    color:#111827;
+    font-weight:700;
+}
+
+h2{
+    color:#1f2937;
+}
+
+h3{
+    color:#374151;
+}
+
+/* ===========================
+   METRIC CARDS
+=========================== */
+
+div[data-testid="stMetric"]{
+    background: #1f3d67;
+    border:1px solid #e5e7eb;
+    border-radius:15px;
+    padding:18px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+div[data-testid="stMetric"]:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   EMPLOYEE CARDS
+=========================== */
+
+div[data-testid="stVerticalBlockBorderWrapper"]{
+    background:BLACK;
+    border-radius:15px;
+    border:1px solid #e5e7eb;
+    transition:.25s;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.stButton > button{
+    width:100%;
+    min-width:0;
+    height:36px;
+    border-radius:8px;
+    border:none;
+    background:#141e50;
+    color:white;
+    font-weight:600;
+    transition:.25s;
+    padding:1px 4px;
+    margin:0;
+    white-space:nowrap;
+}
+
+.stButton > button:hover{
+    background:#1d4ed8;
+    transform:scale(1.02);
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.stTextInput input{
+    border-radius:10px;
+}
+
+.stTextArea textarea{
+    border-radius:10px;
+}
+
+.stSelectbox div[data-baseweb="select"]{
+    border-radius:10px;
+}
+
+/* ===========================
+   DATAFRAME
+=========================== */
+
+div[data-testid="stDataFrame"]{
+    border-radius:15px;
+    border:1px solid #e5e7eb;
+    overflow:hidden;
+}
+
+/* ===========================
+   ALERTS
+=========================== */
+
+div[data-testid="stAlert"]{
+    border-radius:12px;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f3f4f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:10px;
+}
+
+/* ===========================
+   HIDE STREAMLIT
+=========================== */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+/* ===========================
+   FONT
+=========================== */
+
+html,
+body,
+[class*="css"]{
+    font-family:"Segoe UI",sans-serif;
+}
