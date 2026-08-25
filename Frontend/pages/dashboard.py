@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+from config import API_URL
 
 
 st.set_page_config(
@@ -128,7 +129,7 @@ try:
 
         with st.spinner("Employees response..."):
             employee_response = requests.get(
-                "http://127.0.0.1:8000/admin/employees",
+                f"{API_URL}/admin/employees",
                 headers=headers
             )
 
@@ -136,26 +137,26 @@ try:
         # Get all Teams
         with st.spinner("Loading Team response..."):
             team_response = requests.get(
-                "http://127.0.0.1:8000/admin/teams",
+                f"{API_URL}/admin/teams",
                 headers=headers
             )
 
         #open tickets
         with st.spinner("Loading Ticket response..."):
             ticket_response = requests.get(
-                "http://127.0.0.1:8000/tickets/open/count",
+                f"{API_URL}/tickets/open/count",
                 headers=headers
             )
 
         #ticket priority
         priority_response = requests.get(
-            "http://127.0.0.1:8000/tickets/priority/stats",
+            f"{API_URL}/tickets/priority/stats",
             headers=headers
         )
         #customer tickets
         with st.spinner("Loading Top customer  response..."):
             top_customer_response = requests.get(
-                "http://127.0.0.1:8000/tickets/customers/top",
+                f"{API_URL}/tickets/customers/top",
                 headers=headers
             )
 
@@ -167,13 +168,13 @@ try:
         #total customer(users)
         with st.spinner("Loading customer  response..."):
             customer_response = requests.get(
-                "http://127.0.0.1:8000/customer/count",
+                f"{API_URL}/customer/count",
                 headers=headers
             )
         # All Tickets
         with st.spinner("Loading all tickets response..."):
             ticket_all_response = requests.get(
-                "http://127.0.0.1:8000/tickets/all",
+                f"{API_URL}/tickets/all",
                 headers=headers
             )
 
@@ -351,7 +352,7 @@ try:
                                 )
 
                                 assign_response = requests.put(
-                                    f"http://127.0.0.1:8000/admin/employees/{emp['id']}/team",
+                                    f"{API_URL}/admin/employees/{emp['id']}/team",
                                     json={
                                         "team_id": selected_team_id
                                     },
@@ -402,7 +403,7 @@ try:
 
                                     # Call FastAPI status toggle endpoint
                                     status_response = requests.put(
-                                        f"http://127.0.0.1:8000/admin/employees/{emp['id']}/status",
+                                        f"{API_URL}/admin/employees/{emp['id']}/status",
                                         headers=headers
                                     )
 
@@ -506,7 +507,7 @@ try:
                         if submitted:
 
                             response = requests.post(
-                                "http://127.0.0.1:8000/admin/employees",
+                                f"{API_URL}/admin/employees",
                                 json={
                                     "name": name,
                                     "email": email,
@@ -536,7 +537,7 @@ try:
                             else:
 
                                 response = requests.post(
-                                    "http://127.0.0.1:8000/admin/teams",
+                                    f"{API_URL}/admin/teams",
                                     json={
                                         "team_name": team_name,
                                     },
@@ -593,7 +594,7 @@ try:
                 st.subheader("🛠 Support Agent Requests")
 
                 all_ticket_response = requests.get(
-                    "http://127.0.0.1:8000/agent-support/all",
+                    f"{API_URL}/agent-support/all",
                     headers=headers
                 )
 
@@ -645,7 +646,7 @@ try:
                                         ):
 
                                             request_accept = requests.put(
-                                                f"http://127.0.0.1:8000/agent-support/{ticket['id']}/accept",
+                                                f"{API_URL}/agent-support/{ticket['id']}/accept",
                                                 headers=headers
                                             )
 
@@ -729,7 +730,7 @@ try:
             st.subheader("🆕 Open Tickets")
 
             response = requests.get(
-                f"http://127.0.0.1:8000/tickets/team/{st.session_state['team_id']}",
+                f"{API_URL}/tickets/team/{st.session_state['team_id']}",
                 headers=headers
             )
 
@@ -773,7 +774,7 @@ try:
                             ):
 
                                 res = requests.put(
-                                    f"http://127.0.0.1:8000/tickets/{ticket['id']}/accept",
+                                    f"{API_URL}/tickets/{ticket['id']}/accept",
                                     params={
                                         "employee_id": st.session_state["employee_id"]
                                     }
@@ -796,7 +797,7 @@ try:
             st.subheader("📌 My Assigned Tickets")
 
             response = requests.get(
-                f"http://127.0.0.1:8000/tickets/assigned/{st.session_state['employee_id']}",
+                f"{API_URL}/tickets/assigned/{st.session_state['employee_id']}",
                 headers=headers
             )
 
@@ -861,7 +862,7 @@ try:
                                     ):
 
                                         res = requests.put(
-                                            f"http://127.0.0.1:8000/tickets/{ticket['id']}/close",
+                                            f"{API_URL}/tickets/{ticket['id']}/close",
                                             headers=headers
                                         )
 
@@ -882,7 +883,7 @@ try:
         with support_tabs:
 
             team_response = requests.get(
-                "http://127.0.0.1:8000/agent-support/teams",
+                f"{API_URL}/agent-support/teams",
                 headers=headers
             )
 
@@ -923,7 +924,7 @@ try:
                 if submit:
 
                     support_response = requests.post(
-                        f"http://127.0.0.1:8000/agent-support/tickets/{st.session_state['employee_id']}",
+                        f"{API_URL}/agent-support/tickets/{st.session_state['employee_id']}",
                         json={
                             "title": title,
                             "description": description,
@@ -944,7 +945,7 @@ try:
             # -----------------------------------------
 
             support_response = requests.get(
-                f"http://127.0.0.1:8000/agent-support/my-tickets/{st.session_state['employee_id']}",
+                f"{API_URL}/agent-support/my-tickets/{st.session_state['employee_id']}",
                 headers=headers
             )
 
@@ -1019,7 +1020,7 @@ try:
                 if submitted:
 
                     response = requests.put(
-                        f"http://127.0.0.1:8000/customer/profile/{st.session_state['customer_id']}",
+                        f"{API_URL}/customer/profile/{st.session_state['customer_id']}",
                         json={
                             "name": name,
                             "email": email
@@ -1042,7 +1043,7 @@ try:
         with ticket_tab:
 
             team_response = requests.get(
-                "http://127.0.0.1:8000/customer/teams",
+                f"{API_URL}/customer/teams",
                 headers=headers
             )
 
@@ -1085,7 +1086,7 @@ try:
                     )
 
                     response = requests.post(
-                        "http://127.0.0.1:8000/tickets/",
+                        f"{API_URL}/tickets/",
                         json={
                             "title": title,
                             "description": description,
@@ -1109,7 +1110,7 @@ try:
             st.subheader("🎫 My Tickets")
 
             response = requests.get(
-                f"http://127.0.0.1:8000/tickets/customer/{st.session_state['customer_id']}",
+                f"{API_URL}/tickets/customer/{st.session_state['customer_id']}",
                 headers=headers
             )
 

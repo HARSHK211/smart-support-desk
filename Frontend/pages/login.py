@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from config import API_URL
 
 
 st.set_page_config(
@@ -31,7 +32,7 @@ if st.button("Login", width="stretch"):
     try:
 
         response = requests.post(
-            "http://127.0.0.1:8000/auth/login",
+            f"{API_URL}/auth/login",
             json={
                 "email": email.strip(),
                 "password": password

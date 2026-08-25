@@ -1,14 +1,26 @@
+# ============================
 # Standard Library Imports
+# ============================
+
+import os
 import uvicorn
 
+
+# ============================
 # Third-Party Imports
+# ============================
+
 from fastapi import FastAPI
 from fastapi.responses import (
     RedirectResponse,
     JSONResponse
 )
 
+
+# ============================
 # Local / Project Imports
+# ============================
+
 from database.sql_database import Base, engine
 from routers.auth import router
 from routers.admin import admin_router
@@ -17,38 +29,68 @@ from routers.customer import customer_router
 from routers.support_agent import support_agent_router
 from utils.logger import logger
 
-# Create all database tables
+
+# ============================
+# Create Database Tables
+# ============================
+
 Base.metadata.create_all(bind=engine)
 
-# Create FastAPI application
+
+# ============================
+# Create FastAPI Application
+# ============================
+
 app = FastAPI(
     title="Smart Support Desk API",
     version="1.0.0"
 )
 
+
+# ============================
+# Home Endpoint
+# ============================
+
 @app.get("/")
 def home():
     """
-    Redirect users to the Smart Support Desk Streamlit application.
+    Redirect users to the Smart Support Desk
+    Streamlit application.
     """
     try:
+
         logger.info("Home page arrived")
 
+        frontend_url = os.getenv(
+            "FRONTEND_URL",
+            "http://localhost:8501"
+        )
+
         return RedirectResponse(
-            url="http://localhost:8501"
+            url=frontend_url
         )
 
     except Exception as e:
-        logger.exception("Home page request failed")
+
+        logger.exception(
+            "Home page request failed"
+        )
 
         return JSONResponse(
             status_code=500,
             content={
-                "message": f"Home page request failed. Exception: {str(e)}"
+                "message": (
+                    "Home page request failed. "
+                    f"Exception: {str(e)}"
+                )
             }
         )
 
-# Register routers
+
+# ============================
+# Register Routers
+# ============================
+
 app.include_router(router)
 app.include_router(admin_router)
 app.include_router(ticket_router)
@@ -59,12 +101,21 @@ app.include_router(support_agent_router)
 # ============================
 # Application Entry Point
 # ============================
+
 if __name__ == "__main__":
-    logger.info("Starting Smart Support Desk API...")
+
+    logger.info(
+        "Starting Smart Support Desk API..."
+    )
 
     uvicorn.run(
         "main:app",
-        host="127.0.0.1",
-        port=8000,
+        host="0.0.0.0",
+        port=int(
+            os.getenv(
+                "PORT",
+                8000
+            )
+        ),
         reload=True
     )

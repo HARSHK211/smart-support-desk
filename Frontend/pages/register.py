@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from config import API_URL
 
 st.set_page_config(
     page_title="Register",
@@ -33,7 +34,7 @@ if st.button("Register", width='stretch'):
     else:
 
         response = requests.post(
-            "http://127.0.0.1:8000/auth/register",
+            f"{API_URL}/auth/register",
             json={
                 "username": name,
                 "email": email,

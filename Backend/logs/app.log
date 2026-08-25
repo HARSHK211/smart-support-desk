@@ -5793,3 +5793,136 @@ sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1452, 'Cannot add o
 2026-08-24 12:08:52,641 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
 2026-08-24 12:08:52,649 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
 2026-08-24 12:08:52,678 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:26,434 | INFO     | auth.py | login | Line 53 | Login post page arrived
+2026-08-25 21:29:30,726 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:30,760 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:30,811 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:30,995 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:36,195 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:36,209 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:36,217 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:36,245 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:39,955 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:39,965 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:39,973 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:39,993 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:40,071 | INFO     | admin.py | change_employee_status | Line 443 | Admin change employee status requested for ID: 10
+2026-08-25 21:29:40,105 | INFO     | admin.py | change_employee_status | Line 458 | Employee 10 status changed to False
+2026-08-25 21:29:40,203 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:40,214 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:40,221 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:40,245 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:41,405 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:41,415 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:41,421 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:41,450 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:41,519 | INFO     | admin.py | change_employee_status | Line 443 | Admin change employee status requested for ID: 10
+2026-08-25 21:29:41,531 | INFO     | admin.py | change_employee_status | Line 458 | Employee 10 status changed to True
+2026-08-25 21:29:41,635 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:41,651 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:41,658 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:41,680 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:45,889 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:45,899 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:45,907 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:45,928 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:47,486 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:47,498 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:47,505 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:47,545 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:47,615 | INFO     | support_agent.py | all_tickets | Line 295 | GET all support tickets page arrived
+2026-08-25 21:29:53,869 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:53,881 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:53,890 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:53,916 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:29:55,728 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:29:55,738 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:29:55,745 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:29:55,770 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:27,395 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:27,414 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:27,422 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:27,450 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:27,503 | INFO     | admin.py | create_employee | Line 139 | Admin create employee page arrived
+2026-08-25 21:30:27,667 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:27,679 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:27,685 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:27,707 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:30,339 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:30,350 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:30,360 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:30,383 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:37,431 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:37,440 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:37,447 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:37,466 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:38,362 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:38,388 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:38,402 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:38,434 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:38,579 | INFO     | admin.py | assign_team | Line 257 | Assign team requested for employee ID: 25
+2026-08-25 21:30:38,597 | INFO     | admin.py | assign_team | Line 314 | Employee 25 assigned to team 1
+2026-08-25 21:30:38,690 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:38,702 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:38,709 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:38,732 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:41,154 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:41,165 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:41,174 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:41,197 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:42,387 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:42,400 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:42,412 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:42,435 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:45,937 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:45,947 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:45,954 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:45,979 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:47,677 | INFO     | admin.py | get_all_employees | Line 38 | Admin get all employees page arrived
+2026-08-25 21:30:47,694 | INFO     | admin.py | get_all_teams | Line 105 | Admin get all teams page arrived
+2026-08-25 21:30:47,703 | INFO     | ticket.py | get_open_ticket_count | Line 321 | Get open ticket count
+2026-08-25 21:30:47,735 | INFO     | customer.py | get_customer_count | Line 98 | get customer count
+2026-08-25 21:30:56,885 | INFO     | auth.py | login | Line 53 | Login post page arrived
+2026-08-25 21:30:57,029 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:30:57,047 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:30:57,066 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:30:57,077 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:03,911 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:03,932 | INFO     | ticket.py | accept_ticket | Line 229 | Support agent accept ticket page arrived
+2026-08-25 21:31:04,029 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:04,038 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:04,056 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:04,069 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:06,767 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:06,780 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:06,806 | INFO     | ticket.py | close_ticket | Line 277 | Support agent  close ticket page arrived
+2026-08-25 21:31:06,896 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:06,907 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:06,918 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:06,928 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:24,970 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:24,981 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:24,998 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:25,122 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:25,131 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:25,146 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:25,160 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:31,310 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:31,320 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:31,333 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:31,485 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:31,495 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:31,511 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:31,521 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:34,980 | INFO     | ticket.py | get_team_open_tickets | Line 77 | Admin get team open tickets page arrived
+2026-08-25 21:31:34,990 | INFO     | ticket.py | get_assigned_tickets | Line 43 | Admin get assigned tickets page arrived
+2026-08-25 21:31:35,005 | INFO     | support_agent.py | get_teams | Line 44 | All teams get pages arrived
+2026-08-25 21:31:35,024 | INFO     | support_agent.py | my_support_tickets | Line 260 | GET all support tickets page arrived
+2026-08-25 21:31:49,690 | INFO     | auth.py | login | Line 53 | Login post page arrived
+2026-08-25 21:31:49,841 | INFO     | customer.py | get_all_teams | Line 126 | customer get all teams page arrived
+2026-08-25 21:31:49,864 | INFO     | ticket.py | get_customer_tickets | Line 111 | Admin get customer tickets page arrived
+2026-08-25 21:32:22,518 | INFO     | customer.py | get_all_teams | Line 126 | customer get all teams page arrived
+2026-08-25 21:32:22,651 | INFO     | customer.py | get_all_teams | Line 126 | customer get all teams page arrived
+2026-08-25 21:32:22,667 | INFO     | ticket.py | get_customer_tickets | Line 111 | Admin get customer tickets page arrived
+2026-08-25 21:32:25,554 | INFO     | customer.py | get_all_teams | Line 126 | customer get all teams page arrived
+2026-08-25 21:32:25,570 | INFO     | ticket.py | get_customer_tickets | Line 111 | Admin get customer tickets page arrived
