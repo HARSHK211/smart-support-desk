@@ -4,6 +4,7 @@ import streamlit as st
 import requests
 import pandas as pd
 import traceback
+from pathlib import Path
 from config import API_URL
 
 st.set_page_config(
@@ -34,9 +35,14 @@ def handle_error(error):
 
 try:
 
+
+
+
     def load_css():
 
-        with open("styles/style.css") as f:
+        css_path = Path(__file__).parent.parent / "styles" / "style.css"
+
+        with open(css_path, encoding="utf-8") as f:
             st.markdown(
                 f"<style>{f.read()}</style>",
                 unsafe_allow_html=True
