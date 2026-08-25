@@ -63,7 +63,7 @@ def home():
 
         frontend_url = os.getenv(
             "FRONTEND_URL",
-            "http://localhost:8501"
+            "https://smart-support-desk-daamriofgxndfvqgbp7p7b.streamlit.app"
         )
 
         return RedirectResponse(
