@@ -241,17 +241,48 @@ try:
                     )
 
             with card2:
+                st.subheader("🎫 Tickets by Priority")
+
                 if priority_response.status_code == 200:
-                    priority_df = pd.DataFrame(
-                        priority_response.json()
-                    )
 
-                    st.subheader("🎫 Tickets by Priority")
+                    priority_data = priority_response.json()
 
-                    st.bar_chart(
-                        priority_df,
-                        x="priority",
-                        y="count"
+                    if priority_data:
+
+                        priority_df = pd.DataFrame(priority_data)
+
+                        # Debug temporarily if needed
+                        # st.write(priority_data)
+                        # st.write(priority_df.columns.tolist())
+
+                        if "priority" in priority_df.columns and "count" in priority_df.columns:
+
+                            st.bar_chart(
+                                priority_df,
+                                x="priority",
+                                y="count"
+                            )
+
+                        else:
+
+                            st.warning(
+                                "Priority API did not return 'priority' and 'count' columns."
+                            )
+
+                            st.write(
+                                "Received columns:",
+                                priority_df.columns.tolist()
+                            )
+
+                    else:
+
+                        st.info("No ticket priority data available.")
+
+                else:
+
+                    st.error(
+                        f"Unable to load priority statistics. "
+                        f"Status: {priority_response.status_code}"
                     )
 
             st.divider()
