@@ -143,6 +143,21 @@ try:
                 headers=headers,
                 timeout=30
             )
+        st.write("### 🔍 API DEBUG")
+
+        st.write("API URL:", API_URL)
+
+        st.write(
+            "Employee API:",
+            employee_response.status_code,
+            employee_response.text
+        )
+
+        st.write(
+            "Team API:",
+            team_response.status_code,
+            team_response.text
+        )
 
         # open tickets
         with st.spinner("Loading Ticket response..."):
