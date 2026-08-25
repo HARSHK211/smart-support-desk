@@ -8,4 +8,4 @@ bcrypt
 python-multipart
 pydantic
 python-dotenv
-psycopg[binary]
+psycopg2-binary
